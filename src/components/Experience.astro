@@ -1,0 +1,29 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+const EXPERIENCE = [
+  {
+    date: "September 2024 - Currently...",
+    title: "Software Engineer",
+    company: "Seidel Ingeniería Informática",
+    description:
+      "Responsible for developing customised sofwtare for different companies. Covering both front-end and back-end together with a small development team. ",
+  },
+  {
+    date: "December 2023 - July 2024",
+    title: "Software Engineer Intern",
+    company: "Seidel Ingeniería Informática",
+    description:
+      "Developed custom software solutions for clients, collaborating with agile development team. Improved ERP performance by over 20% for a real client through system optimization.  Led the architectural migration to microservices, enhancing system scalability and maintainability.",
+  },
+];
+---
+
+<ol class="relative mt-12">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>

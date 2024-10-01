@@ -1,0 +1,10 @@
+{
+  "site": {
+    "title": "My awesome paginia web!",
+    "description": "Here is the description of my awesome website!"
+  },
+  "about": {
+    "first": "Primero!",
+    "second": "Segundo!"
+  }
+}
