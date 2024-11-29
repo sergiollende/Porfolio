@@ -1,0 +1,76 @@
+{
+  "NAV_ITEMS": [
+    {
+      "title": "Experiencia",
+      "label": "experience",
+      "url": "/#experience"
+    },
+    {
+      "title": "Sobre mí",
+      "label": "aboutme",
+      "url": "/#aboutme"
+    },
+    {
+      "title": "Proyectos",
+      "label": "projects",
+      "url": "/#projects"
+    },
+    {
+      "title": "Contacto",
+      "label": "contact",
+      "url": "mailto:sergiollende7@gmail.com"
+    }
+  ],
+  "AVAILABLE": "Disponible para contratación",
+  "HERO": {
+    "title": "Hola, soy Sergio Llenderrozos",
+    "description1": "Ingeniero de Software especializado en el",
+    "description2": "desarrollo soluciones de software a medida.",
+    "description3": "Con sede en Asturias, España",
+    "description4": "tengo una base sólida en",
+    "description5": "programación, algoritmos y resolución de problemas",
+    "contact": "Contáctame"
+  },
+  "EXPERIENCE": [
+    {
+      "date": "Septiembre 2024 - Actualmente...",
+      "title": "Ingeniero de Software",
+      "company": "Seidel Ingeniería Informática",
+      "description": "Responsable del desarrollo de software a medida cubriendo tanto el front-end como el back-end junto con un equipo de desarrollo. Mantener la comunicación diaria con el cliente, solucionar y resolver errores, problemas técnicos y bottlenecks."
+    },
+    {
+      "date": "Diciembre 2023 - Julio 2024",
+      "title": "Ingeniería de Software en prácticas",
+      "company": "Seidel Ingeniería Informática",
+      "description": "Desarrollé soluciones de software personalizadas para clientes, colaborando con un equipo de desarrollo ágil. Mejoré el rendimiento del ERP en más del 20% para un cliente real a través de la optimización del sistema. Lideré la migración arquitectónica a microservicios, mejorando la escalabilidad y mantenibilidad del sistema."
+    }
+  ],
+  "PROJECTS_LIST": [
+    {
+      "title": "Stack Tower",
+      "description": "Juego 2D replicando al Stack Tower creado solo con HTML y CSS. Proyecto interesante para practicar lógica de programación y animaciones.",
+      "image": "/projects/stackTower.webp",
+      "link": "https://llendestacktower.netlify.app/",
+      "github": "https://github.com/sergiollende/StackTower",
+      "tags": ["HTML", "CSS"]
+    }
+  ],
+  "PROJECTS": {
+    "code": "Código",
+    "preview": "Vista previa"
+  },
+  "ABOUTME": {
+    "introduction": "Mi nombre es Sergio Llenderrozos, pero mis amigos me llaman Llende. Comencé mi viaje en la programación a los 16 años, creando mi primera aplicación usando Python. Actualmente, me especializo en",
+    "introduction2": "desarrollar soluciones de software personalizadas.",
+    "achievements": "Entre mis mayores logros se encuentra la migración exitosa de aplicaciones de clientes de arquitecturas monolíticas a microservicios y el software a medida para clientes reales.",
+    "experience": "Como ingeniero de software, ",
+    "experience2": "poseo experiencia en una amplia gama de lenguajes y marcos modernos, con un enfoque particular en",
+    "experience3": "C# y .NET",
+    "experience4": "Mi objetivo es ayudar a crecer a las empresas aportando mis habilidades de programación y experiencia."
+  },
+  "FOOTER": {
+    "rights": "Casi todos los derechos reservados",
+    "sobremi": "Sobre mí",
+    "contact": "Contacto"
+  }
+}

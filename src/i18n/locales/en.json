@@ -1,0 +1,81 @@
+{
+  "NAV_ITEMS": [
+    {
+      "title": "Experience",
+      "label": "experience",
+      "url": "/#experience"
+    },
+    {
+      "title": "About me",
+      "label": "aboutme",
+      "url": "/#aboutme"
+    },
+    {
+      "title": "Projects",
+      "label": "projects",
+      "url": "/#projects"
+    },
+    {
+      "title": "Contact",
+      "label": "contact",
+      "url": "mailto:sergiollende7@gmail.com"
+    }
+  ],
+  "AVAILABLE": "Available for hiring",
+  "HERO":{
+    "title": "Hey, I'm Sergio Llenderrozos",
+    "subtitle": "Frontend Developer",
+    "description1": "Experienced Software Engineer specialized in",
+    "description2": "developing custom software solutions.",
+    "description3": "Based in Asturias, Spain",
+    "description4": "with a robust background in",
+    "description5": " programming, algorithms, and problem-solving",
+    "contact": "Contact me"
+  },
+  "EXPERIENCE" : [
+    {
+      "date": "September 2024 - Currently...",
+      "title": "Software Engineer",
+      "company": "Seidel Ingeniería Informática",
+      "description":
+        "Responsible for developing customised sofwtare covering both front-end and back-end together with a development team. Maintaining daily client communication, troubleshooting and resolving bugs, technical issues, and performance bottlenecks."
+    },
+    {
+      "date": "December 2023 - July 2024",
+      "title": "Software Engineer Intern",
+      "company": "Seidel Ingeniería Informática",
+      "description":
+        "Developed custom software solutions for clients, collaborating with agile development team. Improved ERP performance by over 20% for a real client through system optimization.  Led the architectural migration to microservices, enhancing system scalability and maintainability."
+    }
+  ],
+  "PROJECTS_LIST" : 
+  [
+    {
+      "title": "Stack Tower",
+      "description":
+        "Simple 2D stack tower game created using only HTML and CSS. Interesting project for practising positioning and animations.",
+      "image": "/projects/stackTower.webp",
+      "link": "https://llendestacktower.netlify.app/",
+      "github": "https://github.com/sergiollende/StackTower",
+      "tags": ["HTML", "CSS"]
+    }
+  ],
+  "PROJECTS" : {
+    "code": "Code",
+    "preview": "Preview"
+  },
+  "ABOUTME":{
+    "introduction": "My name is Sergio Llenderrozos, but my friends call me Llende. I began my programming journey at the age of 16, creating my first application using Python. Currently, I specialize in",
+    "introduction2": "developing custom software solutions.",
+    "achievements": "Among my notable achievements is the successful migration of client applications from monolithic architectures to microservices and development of custom software solutions.",
+    "experience": "As a software engineer,",
+    "experience2": "I possess extensive experience with a wide range of modern languages and frameworks, with a particular focus on",
+    "experience3": "C# and .NET",
+    "experience4": "My objective is to continually enhance my programming skills and professional expertise."
+  },
+  "FOOTER":{
+    "rights": "Almost all rights reserved",
+    "sobremi": "About me",
+    "contact": "Contact"
+  }
+}
