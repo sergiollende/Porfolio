@@ -63,7 +63,9 @@ const TAGSICONS: { [key: string]: { name: string; class: string; icon: any } } =
                     <span
                       class={`flex gap-x-2 rounded-full text-xs ${TAGSICONS[tag].class} py-1 px-2 `}
                     >
-                      {<TAGSICONS[tag].icon class="size-4" />}
+                      {TAGSICONS[tag].icon && (
+                        <component is={TAGSICONS[tag].icon} class="size-4" />
+                      )}
                       {TAGSICONS[tag].name}
                     </span>
                   </li>
