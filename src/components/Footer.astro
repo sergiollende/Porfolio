@@ -1,4 +1,8 @@
 ---
+import { getI18N } from "../i18n";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
 const currentYear = new Date().getFullYear();
 ---
 
@@ -10,20 +14,21 @@ const currentYear = new Date().getFullYear();
   >
     <span class="text-sm sm:text-center text-zinc-800/90 dark:text-zinc-200/90"
       >© {currentYear}
-      <a href="" class="hover:underline">sergiollende</a>. Almost all rights
-      reserved
+      <a href="" class="hover:underline">sergiollende</a>. {i18n.FOOTER.rights}
     </span>
     <ul
       class="flex flex-wrap items-center mt-3 text-sm font-medium dark:text-white/90 sm:mt-0"
     >
       <li>
-        <a href="/#about" class="hover:underline me-4 md:me-6">About me</a>
+        <a href="/#about" class="hover:underline me-4 md:me-6"
+          >{i18n.FOOTER.sobremi}</a
+        >
       </li>
       <li>
         <a
           id="contact"
           href="mailto:sergiollende7@gmail.com"
-          class="hover:underline">Contact</a
+          class="hover:underline">{i18n.FOOTER.contact}</a
         >
       </li>
     </ul>
