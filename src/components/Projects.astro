@@ -58,20 +58,27 @@ const TAGSICONS: { [key: string]: { name: string; class: string; icon: any } } =
             </h3>
             <div class="flex flex-wrap mt-2">
               <ul class="flex flex-row mb-2 gap-x-2">
-                {tags.map((tag) => (
-                  <li>
-                    <span
-                      class={`flex gap-x-2 rounded-full text-xs ${TAGSICONS[tag].class} py-1 px-2 `}
-                    >
-                      {TAGSICONS[tag].icon && (
-                        <component is={TAGSICONS[tag].icon} class="size-4" />
+                {tags.map((tag) => {
+                  const tagKey = tag.toUpperCase(); // Normalizamos a mayúsculas
+                  const tagData = TAGSICONS[tagKey];
+                  return (
+                    <li>
+                      {tagData ? (
+                        <span
+                          class={`flex gap-x-2 rounded-full text-xs ${tagData.class} py-1 px-2`}
+                        >
+                          {tagData.icon && <tagData.icon class="size-4" />}
+                          {tagData.name}
+                        </span>
+                      ) : (
+                        <span class="flex gap-x-2 rounded-full text-xs bg-gray-400 text-white py-1 px-2">
+                          {tag}
+                        </span>
                       )}
-                      {TAGSICONS[tag].name}
-                    </span>
-                  </li>
-                ))}
+                    </li>
+                  );
+                })}
               </ul>
-
               <div class="mt-2 text-gray-700 dark:text-gray-400">
                 {description}
               </div>
