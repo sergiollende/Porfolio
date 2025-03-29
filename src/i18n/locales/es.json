@@ -53,6 +53,14 @@
       "link": "https://llendestacktower.netlify.app/",
       "github": "https://github.com/sergiollende/StackTower",
       "tags": ["HTML", "CSS"]
+    },
+    {
+      "title": "Retro Flappy Bird",
+      "description": "Flappy Bird Retro es un clon mejorado del clásico Flappy Bird desarrollado con HTML, CSS y JavaScript. Incluye selección de skins, niveles de dificultad, power-ups interactivos, traducción en tiempo real, soporte móvil y diseño modular. El proyecto está optimizado para rendimiento, responsive design y escalabilidad.",
+      "image": "/projects/llendeBird.webp",
+      "link": "https://llendebird.netlify.app/",
+      "github": "https://github.com/sergiollende/LlendeBird",
+      "tags": ["HTML", "CSS", "JavaScript"]
     }
   ],
   "PROJECTS": {
@@ -66,7 +74,7 @@
     "experience": "Como ingeniero de software, ",
     "experience2": "poseo experiencia en una amplia gama de lenguajes y marcos modernos, con un enfoque particular en",
     "experience3": "C# y .NET",
-    "experience4": "Mi objetivo es ayudar a crecer a las empresas aportando mis habilidades de programación y experiencia."
+    "experience4": "Mi objetivo es seguir creciendo como desarrollador, enfrentando nuevos retos que me permitan mejorar mis habilidades y aprender constantemente."
   },
   "FOOTER": {
     "rights": "Casi todos los derechos reservados",
