@@ -1,42 +1,22 @@
 ---
-import { getI18N } from "../i18n";
-
-const { currentLocale } = Astro;
-const i18n = getI18N({ currentLocale });
-const personalImageAlt = "Sergio Llenderrozos";
+import type { PortfolioContent } from "../types/content";
+interface Props { content: PortfolioContent["about"]; }
+const { content } = Astro.props;
 ---
-
-<article
-  class="flex flex-col items-center justify-center gap-8 text-gray-700 dark:text-gray-300 md:flex-row"
->
-  <div
-    class="[&>p]:mb-4 [&>p>strong]:text-yellow-500 dark:[&>p>strong]:text-yellow-100 [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty order-2 md:order-1"
-  >
-    <p>
-      {i18n.ABOUTME.introduction}
-      <strong>{i18n.ABOUTME.introduction2}</strong>
-    </p>
-
-    <p>
-      {i18n.ABOUTME.achievements}
-    </p>
-
-    <p>
-      {i18n.ABOUTME.experience}
-      <strong>
-        {i18n.ABOUTME.experience2}
-        <em class="italic">{i18n.ABOUTME.experience3} </em>
-      </strong>.
-      {i18n.ABOUTME.experience4}
-    </p>
+<section id="about" class="page-section about-section" aria-labelledby="about-title">
+  <div class="about-intro"><h2 id="about-title">{content.title}</h2><p>{content.description}</p></div>
+  <div class="profile-grid">
+    <div class="skills-column">
+      <h3>{content.skillsTitle}</h3>
+      <dl class="skills-list">{content.skills.map((group) => <div><dt>{group.title}</dt><dd>{group.items.join(" · ")}</dd></div>)}</dl>
+    </div>
+    <div class="education-column">
+      <h3>{content.educationTitle}</h3>
+      <p class="degree">{content.degree}</p>
+      <p class="education-detail">{content.university}</p>
+      <p class="education-detail">{content.exchange}</p>
+      <h3 class="languages-title">{content.languagesTitle}</h3>
+      <ul class="language-list" role="list">{content.languages.map((language) => <li>{language}</li>)}</ul>
+    </div>
   </div>
-
-  <img
-    width="200"
-    height="200"
-    src="/me.jpg"
-    alt={personalImageAlt}
-    class="order-1 object-cover w-64 h-full p-1 md:order-2 rotate-3 lg:p-2 lg:w-64 aspect-square rounded-2xl bg-black/20 dark:bg-yellow-500/5 ring-1 ring-black/70 dark:ring-white/20"
-    style="object-position: 50% 50%"
-  />
-</article>
+</section>

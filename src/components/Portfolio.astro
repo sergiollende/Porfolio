@@ -1,0 +1,20 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Hero from "./Hero.astro";
+import Experience from "./Experience.astro";
+import Projects from "./Projects.astro";
+import AboutMe from "./AboutMe.astro";
+import Contact from "./Contact.astro";
+import { getContent } from "../i18n";
+import type { Locale } from "../types/content";
+interface Props { locale: Locale; }
+const { locale } = Astro.props;
+const content = getContent(locale);
+---
+<Layout locale={locale} content={content}>
+  <Hero content={content.hero} />
+  <Experience content={content.experience} />
+  <Projects content={content.projects} />
+  <AboutMe content={content.about} />
+  <Contact content={content.contact} />
+</Layout>

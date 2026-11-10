@@ -1,0 +1,488 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-10T22:10:00.045Z",
+  "title": "Design System: Sergio Llenderrozos Portfolio",
+  "extensions": {
+    "colorMeta": {
+      "background": {
+        "role": "neutral",
+        "displayName": "Cool Paper",
+        "canonical": "#f8f9fb",
+        "tonalRamp": [
+          "oklch(15% 0.0011 264.54)",
+          "oklch(26% 0.0019 264.54)",
+          "oklch(38% 0.0027 264.54)",
+          "oklch(49% 0.0029 264.54)",
+          "oklch(61% 0.0029 264.54)",
+          "oklch(72% 0.0029 264.54)",
+          "oklch(84% 0.0018 264.54)",
+          "oklch(95% 0.0006 264.54)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Soft Slate",
+        "canonical": "#eef1f5",
+        "tonalRamp": [
+          "oklch(15% 0.0023 255.48)",
+          "oklch(26% 0.0041 255.48)",
+          "oklch(38% 0.0059 255.48)",
+          "oklch(49% 0.0063 255.48)",
+          "oklch(61% 0.0063 255.48)",
+          "oklch(72% 0.0063 255.48)",
+          "oklch(84% 0.0040 255.48)",
+          "oklch(95% 0.0013 255.48)"
+        ]
+      },
+      "text": {
+        "role": "neutral",
+        "displayName": "Deep Navy",
+        "canonical": "#172334",
+        "tonalRamp": [
+          "oklch(15% 0.0137 257.13)",
+          "oklch(26% 0.0238 257.13)",
+          "oklch(38% 0.0347 257.13)",
+          "oklch(49% 0.0366 257.13)",
+          "oklch(61% 0.0366 257.13)",
+          "oklch(72% 0.0366 257.13)",
+          "oklch(84% 0.0234 257.13)",
+          "oklch(95% 0.0073 257.13)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Reading Slate",
+        "canonical": "#536174",
+        "tonalRamp": [
+          "oklch(15% 0.0132 256.10)",
+          "oklch(26% 0.0229 256.10)",
+          "oklch(38% 0.0334 256.10)",
+          "oklch(49% 0.0352 256.10)",
+          "oklch(61% 0.0352 256.10)",
+          "oklch(72% 0.0352 256.10)",
+          "oklch(84% 0.0225 256.10)",
+          "oklch(95% 0.0070 256.10)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Fine Slate",
+        "canonical": "#d7dee7",
+        "tonalRamp": [
+          "oklch(15% 0.0054 254.61)",
+          "oklch(26% 0.0094 254.61)",
+          "oklch(38% 0.0137 254.61)",
+          "oklch(49% 0.0145 254.61)",
+          "oklch(61% 0.0145 254.61)",
+          "oklch(72% 0.0145 254.61)",
+          "oklch(84% 0.0093 254.61)",
+          "oklch(95% 0.0029 254.61)"
+        ]
+      },
+      "accent": {
+        "role": "primary",
+        "displayName": "Restrained Blue",
+        "canonical": "#2459be",
+        "tonalRamp": [
+          "oklch(15% 0.0525 261.67)",
+          "oklch(26% 0.0910 261.67)",
+          "oklch(38% 0.1330 261.67)",
+          "oklch(49% 0.1400 261.67)",
+          "oklch(61% 0.1400 261.67)",
+          "oklch(72% 0.1400 261.67)",
+          "oklch(84% 0.0896 261.67)",
+          "oklch(95% 0.0280 261.67)"
+        ]
+      },
+      "accent-hover": {
+        "role": "primary",
+        "displayName": "Deep Action Blue",
+        "canonical": "#194594",
+        "tonalRamp": [
+          "oklch(15% 0.0522 261.03)",
+          "oklch(26% 0.0904 261.03)",
+          "oklch(38% 0.1321 261.03)",
+          "oklch(49% 0.1391 261.03)",
+          "oklch(61% 0.1391 261.03)",
+          "oklch(72% 0.1391 261.03)",
+          "oklch(84% 0.0890 261.03)",
+          "oklch(95% 0.0278 261.03)"
+        ]
+      },
+      "on-accent": {
+        "role": "neutral",
+        "displayName": "Action Contrast",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "oklch(15% 0.0000 89.88)",
+          "oklch(26% 0.0000 89.88)",
+          "oklch(38% 0.0000 89.88)",
+          "oklch(49% 0.0000 89.88)",
+          "oklch(61% 0.0000 89.88)",
+          "oklch(72% 0.0000 89.88)",
+          "oklch(84% 0.0000 89.88)",
+          "oklch(95% 0.0000 89.88)"
+        ]
+      },
+      "status": {
+        "role": "semantic",
+        "displayName": "Delivered Green",
+        "canonical": "#25634e",
+        "tonalRamp": [
+          "oklch(15% 0.0273 167.70)",
+          "oklch(26% 0.0474 167.70)",
+          "oklch(38% 0.0693 167.70)",
+          "oklch(49% 0.0729 167.70)",
+          "oklch(61% 0.0729 167.70)",
+          "oklch(72% 0.0729 167.70)",
+          "oklch(84% 0.0467 167.70)",
+          "oklch(95% 0.0146 167.70)"
+        ]
+      },
+      "development": {
+        "role": "semantic",
+        "displayName": "Development Amber",
+        "canonical": "#815213",
+        "tonalRamp": [
+          "oklch(15% 0.0363 68.25)",
+          "oklch(26% 0.0629 68.25)",
+          "oklch(38% 0.0919 68.25)",
+          "oklch(49% 0.0967 68.25)",
+          "oklch(61% 0.0967 68.25)",
+          "oklch(72% 0.0967 68.25)",
+          "oklch(84% 0.0619 68.25)",
+          "oklch(95% 0.0193 68.25)"
+        ]
+      },
+      "selection": {
+        "role": "neutral",
+        "displayName": "Selection Blue",
+        "canonical": "#d9e6ff",
+        "tonalRamp": [
+          "oklch(15% 0.0138 263.62)",
+          "oklch(26% 0.0240 263.62)",
+          "oklch(38% 0.0350 263.62)",
+          "oklch(49% 0.0369 263.62)",
+          "oklch(61% 0.0369 263.62)",
+          "oklch(72% 0.0369 263.62)",
+          "oklch(84% 0.0236 263.62)",
+          "oklch(95% 0.0074 263.62)"
+        ]
+      },
+      "dark-background": {
+        "role": "neutral",
+        "displayName": "Dark Cool Paper",
+        "canonical": "#101721",
+        "tonalRamp": [
+          "oklch(15% 0.0085 257.29)",
+          "oklch(26% 0.0148 257.29)",
+          "oklch(38% 0.0216 257.29)",
+          "oklch(49% 0.0228 257.29)",
+          "oklch(61% 0.0228 257.29)",
+          "oklch(72% 0.0228 257.29)",
+          "oklch(84% 0.0146 257.29)",
+          "oklch(95% 0.0046 257.29)"
+        ]
+      },
+      "dark-surface": {
+        "role": "neutral",
+        "displayName": "Dark Soft Slate",
+        "canonical": "#1a2533",
+        "tonalRamp": [
+          "oklch(15% 0.0115 254.76)",
+          "oklch(26% 0.0199 254.76)",
+          "oklch(38% 0.0292 254.76)",
+          "oklch(49% 0.0307 254.76)",
+          "oklch(61% 0.0307 254.76)",
+          "oklch(72% 0.0307 254.76)",
+          "oklch(84% 0.0196 254.76)",
+          "oklch(95% 0.0061 254.76)"
+        ]
+      },
+      "dark-text": {
+        "role": "neutral",
+        "displayName": "Dark Deep Navy",
+        "canonical": "#edf1f7",
+        "tonalRamp": [
+          "oklch(15% 0.0034 258.34)",
+          "oklch(26% 0.0059 258.34)",
+          "oklch(38% 0.0087 258.34)",
+          "oklch(49% 0.0091 258.34)",
+          "oklch(61% 0.0091 258.34)",
+          "oklch(72% 0.0091 258.34)",
+          "oklch(84% 0.0058 258.34)",
+          "oklch(95% 0.0018 258.34)"
+        ]
+      },
+      "dark-muted": {
+        "role": "neutral",
+        "displayName": "Dark Reading Slate",
+        "canonical": "#aab7c9",
+        "tonalRamp": [
+          "oklch(15% 0.0111 256.51)",
+          "oklch(26% 0.0192 256.51)",
+          "oklch(38% 0.0280 256.51)",
+          "oklch(49% 0.0295 256.51)",
+          "oklch(61% 0.0295 256.51)",
+          "oklch(72% 0.0295 256.51)",
+          "oklch(84% 0.0189 256.51)",
+          "oklch(95% 0.0059 256.51)"
+        ]
+      },
+      "dark-line": {
+        "role": "neutral",
+        "displayName": "Dark Fine Slate",
+        "canonical": "#303e51",
+        "tonalRamp": [
+          "oklch(15% 0.0142 256.16)",
+          "oklch(26% 0.0246 256.16)",
+          "oklch(38% 0.0360 256.16)",
+          "oklch(49% 0.0379 256.16)",
+          "oklch(61% 0.0379 256.16)",
+          "oklch(72% 0.0379 256.16)",
+          "oklch(84% 0.0243 256.16)",
+          "oklch(95% 0.0076 256.16)"
+        ]
+      },
+      "dark-accent": {
+        "role": "primary",
+        "displayName": "Dark Restrained Blue",
+        "canonical": "#95b9ff",
+        "tonalRamp": [
+          "oklch(15% 0.0405 263.17)",
+          "oklch(26% 0.0701 263.17)",
+          "oklch(38% 0.1025 263.17)",
+          "oklch(49% 0.1079 263.17)",
+          "oklch(61% 0.1079 263.17)",
+          "oklch(72% 0.1079 263.17)",
+          "oklch(84% 0.0690 263.17)",
+          "oklch(95% 0.0216 263.17)"
+        ]
+      },
+      "dark-accent-hover": {
+        "role": "primary",
+        "displayName": "Dark Deep Action Blue",
+        "canonical": "#bed3ff",
+        "tonalRamp": [
+          "oklch(15% 0.0245 264.98)",
+          "oklch(26% 0.0425 264.98)",
+          "oklch(38% 0.0622 264.98)",
+          "oklch(49% 0.0655 264.98)",
+          "oklch(61% 0.0655 264.98)",
+          "oklch(72% 0.0655 264.98)",
+          "oklch(84% 0.0419 264.98)",
+          "oklch(95% 0.0131 264.98)"
+        ]
+      },
+      "dark-on-accent": {
+        "role": "neutral",
+        "displayName": "Dark Action Contrast",
+        "canonical": "#101721",
+        "tonalRamp": [
+          "oklch(15% 0.0085 257.29)",
+          "oklch(26% 0.0148 257.29)",
+          "oklch(38% 0.0216 257.29)",
+          "oklch(49% 0.0228 257.29)",
+          "oklch(61% 0.0228 257.29)",
+          "oklch(72% 0.0228 257.29)",
+          "oklch(84% 0.0146 257.29)",
+          "oklch(95% 0.0046 257.29)"
+        ]
+      },
+      "dark-status": {
+        "role": "semantic",
+        "displayName": "Dark Delivered Green",
+        "canonical": "#9cd5bd",
+        "tonalRamp": [
+          "oklch(15% 0.0254 166.85)",
+          "oklch(26% 0.0441 166.85)",
+          "oklch(38% 0.0644 166.85)",
+          "oklch(49% 0.0678 166.85)",
+          "oklch(61% 0.0678 166.85)",
+          "oklch(72% 0.0678 166.85)",
+          "oklch(84% 0.0434 166.85)",
+          "oklch(95% 0.0136 166.85)"
+        ]
+      },
+      "dark-development": {
+        "role": "semantic",
+        "displayName": "Dark Development Amber",
+        "canonical": "#edc684",
+        "tonalRamp": [
+          "oklch(15% 0.0355 80.08)",
+          "oklch(26% 0.0615 80.08)",
+          "oklch(38% 0.0900 80.08)",
+          "oklch(49% 0.0947 80.08)",
+          "oklch(61% 0.0947 80.08)",
+          "oklch(72% 0.0947 80.08)",
+          "oklch(84% 0.0606 80.08)",
+          "oklch(95% 0.0189 80.08)"
+        ]
+      },
+      "dark-selection": {
+        "role": "neutral",
+        "displayName": "Dark Selection Blue",
+        "canonical": "#2b436d",
+        "tonalRamp": [
+          "oklch(15% 0.0292 260.95)",
+          "oklch(26% 0.0507 260.95)",
+          "oklch(38% 0.0741 260.95)",
+          "oklch(49% 0.0780 260.95)",
+          "oklch(61% 0.0780 260.95)",
+          "oklch(72% 0.0780 260.95)",
+          "oklch(84% 0.0499 260.95)",
+          "oklch(95% 0.0156 260.95)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Name display",
+        "purpose": "Two-line hero identity."
+      },
+      "headline": {
+        "displayName": "Section headline",
+        "purpose": "Section headings, with an enlarged contact variant."
+      },
+      "title": {
+        "displayName": "Content title",
+        "purpose": "Experience and supporting headings, with a fluid project variant."
+      },
+      "body": {
+        "displayName": "Reading text",
+        "purpose": "Base prose; descriptions use documented larger variants."
+      },
+      "label": {
+        "displayName": "Action label",
+        "purpose": "Primary and text action typography."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "navigation-color",
+        "value": ".18s ease-out",
+        "purpose": "Navigation color transition."
+      },
+      {
+        "name": "button-background",
+        "value": ".2s ease-out",
+        "purpose": "Primary-action background transition."
+      },
+      {
+        "name": "hero-arrive",
+        "value": ".65s cubic-bezier(.16, 1, .3, 1)",
+        "purpose": "Translate the hero name from 0 12px to 0 0 only when reduced motion is not requested."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "animation: none !important; transition: none !important; scroll-behavior: auto",
+        "purpose": "Disable animation, transitions, and smooth scrolling when prefers-reduced-motion is reduce."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "tablet-max",
+        "value": "900px"
+      },
+      {
+        "name": "mobile-max",
+        "value": "600px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary action",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The filled project action with the shared inline SVG arrow.",
+      "html": "<a class=\"ds-button\" href=\"#projects\">View projects<svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 12h16m-6-6 6 6-6 6\"/></svg></a>",
+      "css": ".ds-button{font-family:\"Onest Variable\",sans-serif;display:inline-flex;justify-content:center;align-items:center;gap:1rem;min-height:48px;padding:.8rem 1.2rem;border-radius:6px;background:var(--accent,#2459be);color:var(--on-accent,#fff);font-size:.875rem;font-weight:500;line-height:1.65;text-decoration:none;transition:background-color .2s ease-out}.ds-button:hover{background:var(--accent-hover,#194594)}.ds-button:focus-visible,.ds-text-link:focus-visible,.ds-nav a:focus-visible,.ds-control:focus-visible,.ds-project a:focus-visible,.ds-contact:focus-visible{outline:2px solid var(--accent,#2459be);outline-offset:5px;border-radius:2px}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}"
+    },
+    {
+      "name": "Text action",
+      "kind": "button",
+      "refersTo": "text-link",
+      "description": "Email, social, and visit actions with a quiet resting state.",
+      "html": "<a class=\"ds-text-link\" href=\"#contact\">Contact<svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M6 18 18 6M6 6h12v12\"/></svg></a>",
+      "css": ".ds-text-link{font-family:\"Onest Variable\",sans-serif;display:inline-flex;align-items:center;gap:.6rem;min-height:44px;color:var(--text,#172334);font-size:.875rem;font-weight:500;line-height:1.65;text-decoration:none;text-underline-offset:.25em;text-decoration-thickness:1px}.ds-text-link:hover{color:var(--accent,#2459be);text-decoration:underline}.ds-button:focus-visible,.ds-text-link:focus-visible,.ds-nav a:focus-visible,.ds-control:focus-visible,.ds-project a:focus-visible,.ds-contact:focus-visible{outline:2px solid var(--accent,#2459be);outline-offset:5px;border-radius:2px}"
+    },
+    {
+      "name": "Section navigation",
+      "kind": "nav",
+      "description": "The four persistent section links wrap into the second header row on mobile.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Portfolio\"><a href=\"#experience\">Experience</a><a href=\"#projects\" aria-current=\"location\">Projects</a><a href=\"#about\">About</a><a href=\"#contact\">Contact</a></nav>",
+      "css": ".ds-nav{font-family:\"Onest Variable\",sans-serif;display:flex;align-items:center;gap:1.8rem}.ds-nav a{padding:.75rem 0;color:var(--muted,#536174);font-size:.875rem;line-height:1.65;text-decoration:none;transition:color .18s ease-out}.ds-nav a:hover,.ds-nav a[aria-current=\"location\"]{color:var(--accent,#2459be)}@media(max-width:900px){.ds-nav{gap:1.1rem}}@media(max-width:600px){.ds-nav{width:100%;justify-content:space-between;gap:.6rem}.ds-nav a{display:flex;align-items:center;min-height:44px;padding:.5rem 0;font-size:.8rem}}.ds-button:focus-visible,.ds-text-link:focus-visible,.ds-nav a:focus-visible,.ds-control:focus-visible,.ds-project a:focus-visible,.ds-contact:focus-visible{outline:2px solid var(--accent,#2459be);outline-offset:5px;border-radius:2px}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}"
+    },
+    {
+      "name": "Technology tags",
+      "kind": "chip",
+      "refersTo": "technology-tag",
+      "description": "Passive technology labels, wrapping as content requires.",
+      "html": "<ul class=\"ds-tags\" role=\"list\"><li>C#</li><li>.NET</li><li>SQL Server</li></ul>",
+      "css": ".ds-tags{font-family:\"Onest Variable\",sans-serif;display:flex;flex-wrap:wrap;list-style:none;gap:.5rem;padding:0;margin:0}.ds-tags li{background:var(--surface,#eef1f5);color:var(--muted,#536174);font-size:.75rem;line-height:1.65;padding:.3rem .65rem;border-radius:4px}"
+    },
+    {
+      "name": "Header language control",
+      "kind": "button",
+      "refersTo": "header-control",
+      "description": "Compact language control with a full keyboard and touch target.",
+      "html": "<a class=\"ds-control\" href=\"/es/\" aria-label=\"Cambiar a español\" lang=\"es\">ES</a>",
+      "css": ".ds-control{font-family:\"Onest Variable\",sans-serif;display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;border:0;border-radius:6px;background:transparent;color:var(--text,#172334);font-size:.75rem;font-weight:600;text-decoration:none}.ds-control:hover{background:var(--surface,#eef1f5)}.ds-button:focus-visible,.ds-text-link:focus-visible,.ds-nav a:focus-visible,.ds-control:focus-visible,.ds-project a:focus-visible,.ds-contact:focus-visible{outline:2px solid var(--accent,#2459be);outline-offset:5px;border-radius:2px}"
+    },
+    {
+      "name": "Project evidence row",
+      "kind": "custom",
+      "description": "Open project content with explicit status and definition-list case details; no elevated card shell.",
+      "html": "<article class=\"ds-project\"><h3><a href=\"https://nomasolvidos.es\">NoMasOlvidos<svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M6 18 18 6M6 6h12v12\"/></svg></a></h3><p class=\"ds-status\"><span aria-hidden=\"true\"></span>In development</p><dl><div><dt>Contribution</dt><dd>Google Calendar, Outlook, and email reminders work in tests. WhatsApp Business integration is pending.</dd></div></dl></article>",
+      "css": ".ds-project{font-family:\"Onest Variable\",sans-serif;color:var(--text,#172334);padding:0 0 44px;border-bottom:1px solid var(--line,#d7dee7)}.ds-project h3{font-size:clamp(1.4rem,2.2vw,1.8rem);font-weight:600;line-height:1.4;letter-spacing:-.03em;margin:0}.ds-project h3 a{display:inline-flex;align-items:center;gap:.8rem;color:inherit;text-decoration:none}.ds-project h3 a:hover{color:var(--accent,#2459be)}.ds-status{display:inline-flex;align-items:baseline;gap:.5rem;margin:16px 0 0;color:var(--development,#815213);font-size:.75rem;font-weight:500;line-height:1.65}.ds-status span{display:inline-block;width:5px;height:5px;border-radius:50%;background:currentColor;align-self:center}.ds-project dl{display:grid;gap:18px;margin:24px 0 0;max-width:70ch}.ds-project dt{font-size:.8rem;font-weight:600;line-height:1.65;margin-bottom:.35rem}.ds-project dd{margin:0;color:var(--muted,#536174);font-size:.875rem;line-height:1.65}@media(max-width:600px){.ds-project{padding-bottom:32px}.ds-project h3{font-size:1.5rem}}.ds-button:focus-visible,.ds-text-link:focus-visible,.ds-nav a:focus-visible,.ds-control:focus-visible,.ds-project a:focus-visible,.ds-contact:focus-visible{outline:2px solid var(--accent,#2459be);outline-offset:5px;border-radius:2px}"
+    },
+    {
+      "name": "Contact line",
+      "kind": "custom",
+      "description": "An email row with a fine separator and an accent hover response.",
+      "html": "<a class=\"ds-contact\" href=\"#contact\">Email<svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M6 18 18 6M6 6h12v12\"/></svg></a>",
+      "css": ".ds-contact{font-family:\"Onest Variable\",sans-serif;display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:48px;padding-bottom:12px;border-bottom:1px solid var(--line,#d7dee7);color:var(--text,#172334);font-size:clamp(1rem,1.7vw,1.3rem);line-height:1.65;letter-spacing:-.02em;text-decoration:none}.ds-contact:hover{color:var(--accent,#2459be);border-color:var(--accent,#2459be)}@media(max-width:600px){.ds-contact{font-size:1rem}}.ds-button:focus-visible,.ds-text-link:focus-visible,.ds-nav a:focus-visible,.ds-control:focus-visible,.ds-project a:focus-visible,.ds-contact:focus-visible{outline:2px solid var(--accent,#2459be);outline-offset:5px;border-radius:2px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Work as Evidence",
+    "overview": "The portfolio presents engineering work through open editorial rows, clear type, and authentic project screenshots. Its cool neutral canvas, navy text, and restrained blue accent support a professional, readable account of contributions. This describes the implemented visual world pinned in `.impeccable/surfaces/portfolio.md`.\n\nInformation remains visible in either language and theme. Fine separators establish rhythm; measured whitespace and text hierarchy do the organizing. Light is the default, with an explicitly selected dark alternative. A short optional hero movement introduces the name without concealing content.",
+    "keyCharacteristics": [
+      "Self-hosted Onest throughout, with fluid headings and readable supporting text.",
+      "Cool neutral surfaces, navy text, and a single blue interaction accent.",
+      "Open rows and thin separators, with authentic public project screenshots.",
+      "Equivalent English and Spanish layouts, responsive stacking, and visible keyboard focus."
+    ],
+    "rules": [
+      {
+        "name": "The Semantic Theme Rule",
+        "body": "Change the full semantic palette together; dark mode must retain text hierarchy, separator visibility, and readable filled actions.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Family Rule",
+        "body": "Build hierarchy with Onest size, weight, spacing, and color; preserve the shared reading voice across both locales.",
+        "section": "typography"
+      },
+      {
+        "name": "The Open Row Rule",
+        "body": "Organize experience and project content with whitespace and fine separators; retain their open page surface.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do use semantic theme roles together and retain clear hierarchy in both themes.",
+      "Do preserve Onest, open rows, fine separators, and authentic public project screenshots.",
+      "Do verify both languages at 375, 768, and 1440px, visible keyboard focus, native anchors, and light fallback when storage or JavaScript is unavailable.",
+      "Do pair project-status color with explicit text and maintain equivalent facts in both locales."
+    ],
+    "donts": [
+      "Don't add a portrait, decorative illustration, hero statistics, or skill meters to this portfolio.",
+      "Don't manufacture screenshots or use private enterprise records as visual evidence.",
+      "Don't introduce elevated card stacks or decorative effects into the established flat editorial layout.",
+      "Don't make content visibility depend on JavaScript, animation, hover, or theme storage."
+    ]
+  }
+}

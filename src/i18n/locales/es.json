@@ -1,76 +1,93 @@
 {
-  "NAV_ITEMS": [
-    {
-      "title": "Experiencia",
-      "label": "experience",
-      "url": "/#experience"
-    },
-    {
-      "title": "Sobre mí",
-      "label": "aboutme",
-      "url": "/#aboutme"
-    },
-    {
-      "title": "Proyectos",
-      "label": "projects",
-      "url": "/#projects"
-    },
-    {
-      "title": "Contacto",
-      "label": "contact",
-      "url": "mailto:sergiollende7@gmail.com"
-    }
-  ],
-  "AVAILABLE": "Disponible para contratación",
-  "HERO": {
-    "title": "Hola, soy Sergio Llenderrozos",
-    "description1": "Ingeniero de Software especializado en el",
-    "description2": "desarrollo soluciones de software a medida.",
-    "description3": "Con sede en Asturias, España",
-    "description4": "tengo una base sólida en",
-    "description5": "programación, algoritmos y resolución de problemas",
-    "contact": "Contáctame"
+  "meta": {
+    "title": "Sergio Llenderrozos — Ingeniero de software · C# y .NET",
+    "description": "Ingeniero de software en Madrid, especializado en C# y .NET. Experiencia en Enterprise Mobility, rendimiento de aplicaciones e integraciones. Conoce mi trayectoria y proyectos."
   },
-  "EXPERIENCE": [
-    {
-      "date": "Septiembre 2024 - Actualmente...",
-      "title": "Ingeniero de Software",
-      "company": "Seidel Ingeniería Informática",
-      "description": "Responsable del desarrollo de software a medida cubriendo tanto el front-end como el back-end junto con un equipo de desarrollo. Mantener la comunicación diaria con el cliente, solucionar y resolver errores, problemas técnicos y bottlenecks."
+  "nav": { "experience": "Experiencia", "projects": "Proyectos", "about": "Perfil", "contact": "Contacto", "label": "Navegación principal", "skip": "Saltar al contenido", "home": "Sergio Llenderrozos, inicio" },
+  "controls": { "language": "Cambiar a inglés", "theme": "Tema oscuro", "dark": "Activar tema oscuro", "light": "Activar tema claro", "external": "Se abre en otra pestaña." },
+  "hero": {
+    "role": "Ingeniero de software · C# y .NET",
+    "description": "Desarrollo aplicaciones de negocio, optimizo su rendimiento y resuelvo incidencias en producción. En mis proyectos propios también construyo interfaces e integraciones web.",
+    "current": "Software Engineer II en Enterprise Mobility", "location": "Madrid, España", "projects": "Ver proyectos", "contact": "Contacto"
+  },
+  "experience": {
+    "title": "Experiencia",
+    "introduction": "Desarrollo y mantenimiento de aplicaciones de negocio, desde la investigación de incidencias hasta la entrega de cambios.",
+    "items": [
+      {
+        "company": "Enterprise Mobility", "location": "Madrid, España", "period": "Mayo 2025 — actualidad",
+        "roles": [
+          { "title": "Software Engineer II", "period": "Octubre 2026 — actualidad" },
+          { "title": "Software Engineer I", "period": "Mayo 2025 — septiembre 2026" }
+        ],
+        "result": { "value": "50 %", "description": "de reducción en el consumo de memoria de una aplicación web empresarial." },
+        "highlights": [
+          "Investigué y resolví incidencias críticas en producción, en contacto directo con los usuarios de las aplicaciones.",
+          "Implementé el envío masivo de facturas a la Agencia Tributaria para reducir el trabajo manual.",
+          "Desarrollo cambios a partir de requisitos de negocio y participo en las pruebas y el mantenimiento en producción."
+        ],
+        "technologies": ["C#", ".NET", "SQL", "JavaScript", "ASP.NET Web Forms"]
+      },
+      {
+        "company": "Seidel Ingeniería Informática", "location": "Oviedo, España", "period": "Septiembre 2024 — mayo 2025",
+        "roles": [{ "title": "Ingeniero de software", "period": "Septiembre 2024 — mayo 2025" }],
+        "highlights": ["Desarrollé y mantuve soluciones ERP a medida con C#/.NET, WPF y SQL Server.", "Trabajé directamente con clientes para concretar requisitos y resolver incidencias."],
+        "technologies": ["C#", ".NET", "WPF", "SQL Server"]
+      },
+      {
+        "company": "Seidel Ingeniería Informática", "location": "Oviedo, España", "period": "Diciembre 2023 — julio 2024",
+        "roles": [{ "title": "Ingeniero de software en prácticas", "period": "Diciembre 2023 — julio 2024" }],
+        "highlights": ["Mejoré más de un 20 % el rendimiento de un ERP mediante optimizaciones específicas.", "Desarrollé APIs REST y contribuí a migrar software .NET a microservicios con .NET 6 y a integrar dos aplicaciones previamente independientes."],
+        "technologies": ["C#", ".NET 6", "APIs REST", "SQL Server"]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Proyectos seleccionados",
+    "introduction": "Un producto propio que conecta calendarios y correo, y una web entregada a una clienta. Qué construí y en qué estado está cada proyecto.",
+    "problem": "La necesidad", "contribution": "Lo que hice", "visit": "Visitar web",
+    "earlier": {
+      "title": "Otros proyectos",
+      "visit": "Jugar",
+      "code": "Ver código",
+      "items": [
+        { "id": "stackTower", "title": "Stack Tower", "description": "Juego 2D de apilar bloques, construido con HTML y CSS para practicar posicionamiento y animaciones." }
+      ]
     },
-    {
-      "date": "Diciembre 2023 - Julio 2024",
-      "title": "Ingeniería de Software en prácticas",
-      "company": "Seidel Ingeniería Informática",
-      "description": "Desarrollé soluciones de software personalizadas para clientes, colaborando con un equipo de desarrollo ágil. Mejoré el rendimiento del ERP en más del 20% para un cliente real a través de la optimización del sistema. Lideré la migración arquitectónica a microservicios, mejorando la escalabilidad y mantenibilidad del sistema."
-    }
-  ],
-  "PROJECTS_LIST": [
-    {
-      "title": "Stack Tower",
-      "description": "Juego 2D replicando al Stack Tower creado solo con HTML y CSS. Proyecto interesante para practicar lógica de programación y animaciones.",
-      "image": "/projects/stackTower.webp",
-      "link": "https://llendestacktower.netlify.app/",
-      "github": "https://github.com/sergiollende/StackTower",
-      "tags": ["HTML", "CSS"]
-    }
-  ],
-  "PROJECTS": {
-    "code": "Código",
-    "preview": "Vista previa"
+    "items": [
+      {
+        "id": "nomasolvidos", "title": "NoMasOlvidos", "category": "Producto propio · Automatización de citas",
+        "description": "Recordatorios de citas por correo a partir de la agenda del negocio.",
+        "problem": "Reducir el seguimiento manual de citas sin cambiar de calendario.",
+        "contribution": "Construí el producto en Next.js, desde la interfaz hasta la conexión con calendarios y el envío automático de recordatorios.",
+        "status": "En desarrollo · Sin usuarios reales todavía",
+        "details": ["Google Calendar, Outlook y envío de correos probados internamente.", "Integración con WhatsApp Business pendiente."],
+        "imageAlt": "Página de NoMasOlvidos con un ejemplo ilustrativo de agenda y recordatorio de cita"
+      },
+      {
+        "id": "claudia", "title": "Claudia Lucas Psicología", "category": "Proyecto para una clienta · Web profesional",
+        "description": "Web para una psicóloga con atención presencial y online.",
+        "problem": "Explicar sus servicios y facilitar que las personas interesadas se pongan en contacto.",
+        "contribution": "Desarrollé la web en Astro, incorporé un formulario de contacto y trabajé el SEO de sus páginas.",
+        "status": "Entregado · Clienta real",
+        "details": [],
+        "imageAlt": "Portada de Claudia Lucas Psicología con acceso a servicios y solicitud de sesión"
+      }
+    ]
   },
-  "ABOUTME": {
-    "introduction": "Mi nombre es Sergio Llenderrozos, pero mis amigos me llaman Llende. Comencé mi viaje en la programación a los 16 años, creando mi primera aplicación usando Python. Actualmente, me especializo en",
-    "introduction2": "desarrollar soluciones de software personalizadas.",
-    "achievements": "Entre mis mayores logros se encuentra la migración exitosa de aplicaciones de clientes de arquitecturas monolíticas a microservicios y el software a medida para clientes reales.",
-    "experience": "Como ingeniero de software, ",
-    "experience2": "poseo experiencia en una amplia gama de lenguajes y marcos modernos, con un enfoque particular en",
-    "experience3": "C# y .NET",
-    "experience4": "Mi objetivo es ayudar a crecer a las empresas aportando mis habilidades de programación y experiencia."
+  "about": {
+    "title": "Perfil técnico",
+    "description": "Mi especialidad es C# y .NET. He mantenido sistemas de negocio, desarrollado APIs REST y trabajado con SQL Server. Mis proyectos web me permiten aplicar esa experiencia desde la integración de servicios hasta la interfaz.",
+    "skillsTitle": "Tecnologías",
+    "skills": [
+      { "title": "Backend y datos", "items": ["C#", ".NET", "APIs REST", "Entity Framework", "SQL Server", "PostgreSQL"] },
+      { "title": "Interfaces y aplicaciones", "items": ["ASP.NET Web Forms", "WPF", "TypeScript", "JavaScript", "Next.js", "React", "Astro"] },
+      { "title": "Herramientas y servicios", "items": ["Azure", "Azure Data Factory", "Azure DevOps", "Supabase", "Postman", "Visual Studio"] }
+    ],
+    "educationTitle": "Formación", "degree": "Grado en Ingeniería Informática · Programa bilingüe",
+    "university": "Universidad de Oviedo · 2020–2024", "exchange": "Intercambio internacional en la Universidad del Pireo, Atenas.",
+    "languagesTitle": "Idiomas", "languages": ["Español nativo", "Inglés B2 · Certificación Cambridge"]
   },
-  "FOOTER": {
-    "rights": "Casi todos los derechos reservados",
-    "sobremi": "Sobre mí",
-    "contact": "Contacto"
-  }
+  "contact": { "title": "Contacto profesional", "description": "Si estás formando un equipo backend, podemos hablar de mi experiencia con .NET y de las decisiones técnicas detrás de estos proyectos.", "email": "Enviar un correo" },
+  "footer": { "built": "Hecho con Astro.", "top": "Volver arriba" }
 }

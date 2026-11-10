@@ -1,18 +1,29 @@
 ---
-import { languages } from "../i18n/ui";
-import {
-  getLangFromUrl,
-  useTranslatedPath,
-} from "../i18n/utils.ts";
-
-const lang = getLangFromUrl(Astro.url);
-const translatePath = useTranslatedPath(lang);
+import { localePath } from "../i18n";
+import type { Locale } from "../types/content";
+interface Props { locale: Locale; label: string; }
+const { locale, label } = Astro.props;
+const alternate = locale === "en" ? "es" : "en";
 ---
-
-{
-  Object.entries(languages).map(([langPrefix]) => {     
-    if (langPrefix == lang) return <></>
-    return (<a href={translatePath("/", langPrefix)}>{langPrefix.toUpperCase()}</a>)
-  })
-
-}
+<a class="language-switch control" href={localePath(alternate)} hreflang={alternate} lang={alternate} aria-label={label} title={label} data-language-switch>
+  {alternate.toUpperCase()}
+</a>
+<script>
+  // Use the visible section, which can differ from the last clicked URL hash.
+  // The native link remains usable without JavaScript.
+  const languageSwitch = document.querySelector<HTMLAnchorElement>("[data-language-switch]");
+  languageSwitch?.addEventListener("click", () => {
+    const destination = new URL(languageSwitch.href);
+    const headerBottom = document.querySelector("header")?.getBoundingClientRect().bottom ?? 0;
+    const sections = [...document.querySelectorAll<HTMLElement>("main > section")];
+    const visibleSection = sections.reduce<{ element?: HTMLElement; visible: number }>((best, element) => {
+      const bounds = element.getBoundingClientRect();
+      const visible = Math.max(0, Math.min(bounds.bottom, innerHeight) - Math.max(bounds.top, headerBottom));
+      return visible > best.visible ? { element, visible } : best;
+    }, { visible: 0 }).element;
+    const atBottom = window.scrollY + innerHeight >= document.documentElement.scrollHeight - 2;
+    const target = window.scrollY < 8 ? "" : atBottom ? "contact" : visibleSection?.id;
+    destination.hash = target ? `#${target}` : "";
+    languageSwitch.href = destination.href;
+  });
+</script>

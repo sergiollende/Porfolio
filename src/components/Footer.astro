@@ -1,36 +1,6 @@
 ---
-import { getI18N } from "../i18n";
-
-const { currentLocale } = Astro;
-const i18n = getI18N({ currentLocale });
-const currentYear = new Date().getFullYear();
+import type { PortfolioContent } from "../types/content";
+interface Props { content: PortfolioContent["footer"]; }
+const { content } = Astro.props;
 ---
-
-<footer
-  class="opacity-80 m-4 min-[375px]:pl-4 md:pl-0 mt-16 w-full mx-auto container lg:max-w-4xl md:max-w-2xl mb-10 flex justify-center"
->
-  <div
-    class="rounded-lg w-full max-w-screen-xl mx-auto md:flex md:items-center md:justify-between py-4"
-  >
-    <span class="text-sm sm:text-center text-zinc-800/90 dark:text-zinc-200/90"
-      >© {currentYear}
-      <a href="" class="hover:underline">sergiollende</a>. {i18n.FOOTER.rights}
-    </span>
-    <ul
-      class="flex flex-wrap items-center mt-3 text-sm font-medium dark:text-white/90 sm:mt-0"
-    >
-      <li>
-        <a href="/#about" class="hover:underline me-4 md:me-6"
-          >{i18n.FOOTER.sobremi}</a
-        >
-      </li>
-      <li>
-        <a
-          id="contact"
-          href="mailto:sergiollende7@gmail.com"
-          class="hover:underline">{i18n.FOOTER.contact}</a
-        >
-      </li>
-    </ul>
-  </div>
-</footer>
+<footer class="site-footer container"><p>© {new Date().getFullYear()} Sergio Llenderrozos</p><p>{content.built}</p><a href="#top">{content.top}<span aria-hidden="true"> ↑</span></a></footer>

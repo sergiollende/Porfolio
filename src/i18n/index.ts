@@ -1,16 +1,15 @@
-import english from '../i18n/locales/en.json';
-import spanish from '../i18n/locales/es.json';
+import english from "./locales/en.json";
+import spanish from "./locales/es.json";
+import type { Locale, PortfolioContent } from "../types/content";
 
-const LANG = {
-	ENGLISH: 'en',
-	SPANISH: 'es',
-};
-
-export const getI18N = ({
-	currentLocale = 'en',
-}: {
-	currentLocale: string | undefined;
-}) => {
-	if (currentLocale === LANG.ENGLISH) return {...spanish, ...english};
-	return spanish;
-};
+// Both languages are checked against one shape, without mixed-language fallbacks.
+const translations: Record<Locale, PortfolioContent> = { en: english, es: spanish };
+export function getLocale(url: URL): Locale {
+  return url.pathname.split("/")[1] === "es" ? "es" : "en";
+}
+export function getContent(locale: Locale): PortfolioContent {
+  return translations[locale];
+}
+export function localePath(locale: Locale): string {
+  return locale === "es" ? "/es/" : "/";
+}

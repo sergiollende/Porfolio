@@ -1,54 +1,60 @@
 ---
-import Badge from "../components/Badge.astro";
-import LinkedInIcon from "../components/icons/LinkedIn.astro";
-import MailIcon from "../components/icons/Mail.astro";
-import SocialPill from "../components/SocialPill.astro";
-import { getI18N } from "../i18n";
-
-const { currentLocale } = Astro;
-const i18n = getI18N({ currentLocale });
-const personalImageAlt = "Sergio Llenderrozos";
+import Arrow from "./Arrow.astro";
+import type { PortfolioContent } from "../types/content";
+interface Props { content: PortfolioContent["hero"]; }
+const { content } = Astro.props;
 ---
-
-<div class="max-w-full">
-  <div class="flex gap-4 mb-4">
-    <img
-      class="rounded-full shadow-lg size-16"
-      src="/me.jpg"
-      alt={personalImageAlt}
-    />
-    <a
-      href="https://linkedin.com/in/sergiollenderrozos"
-      target="_blank"
-      rel="noopener"
-      class="flex items-center transition md:justify-center md:hover:scale-105"
-    >
-      <Badge> {i18n.AVAILABLE} </Badge>
-    </a>
+<section class="hero" aria-labelledby="hero-title" data-hero>
+  <div class="hero-field" aria-hidden="true">
+    <svg viewBox="0 0 1120 535" preserveAspectRatio="xMaxYMid slice" fill="none" focusable="false">
+      <path d="M1120 57h-94l-25 25H866l-26 26h-54m334-24h-74l-25 25H918m202 332h-103l-34-34h-83l-24 24h-66m310 38h-133l-28-28h-43m204-334h-49l-21 21h-54" />
+      <circle cx="786" cy="108" r="3" /><circle cx="918" cy="109" r="3" /><circle cx="810" cy="431" r="3" /><circle cx="916" cy="441" r="3" /><circle cx="996" cy="128" r="3" />
+    </svg>
   </div>
-  <h1
-    class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
-  >
-    {i18n.HERO.title}
-  </h1>
-  <p
-    class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300"
-  >
-    {i18n.HERO.description1}
-    <strong> {i18n.HERO.description2} </strong>
-    {i18n.HERO.description3} 🇪🇸 {i18n.HERO.description4}
-    <strong>
-      {i18n.HERO.description5}
-    </strong>
-  </p>
-  <nav class="flex flex-wrap gap-4 mt-8">
-    <SocialPill href="mailto:sergiollende7@gmail.com">
-      <MailIcon class="size-4" />
-      {i18n.HERO.contact}
-    </SocialPill>
-    <SocialPill href="https://www.linkedin.com/in/sergiollenderrozos/">
-      <LinkedInIcon class="size-4" />
-      LinkedIn
-    </SocialPill>
-  </nav>
-</div>
+  <div class="hero-heading">
+    <h1 id="hero-title">Sergio<br />Llenderrozos<span class="name-period">.</span></h1>
+    <p class="hero-role">{content.role}</p>
+  </div>
+  <div class="hero-detail">
+    <p class="hero-description">{content.description}</p>
+    <div class="hero-actions">
+      <a class="button button-primary" href="#projects">{content.projects}<Arrow /></a>
+      <a class="text-link hero-contact" href="#contact">{content.contact}</a>
+    </div>
+  </div>
+  <div class="hero-footnote">
+    <p><span class="current-dot" aria-hidden="true"></span>{content.current}</p>
+    <p>{content.location}</p>
+  </div>
+</section>
+
+<script>
+  const hero = document.querySelector<HTMLElement>("[data-hero]");
+  const pointerMotion = matchMedia("(hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) and (forced-colors: none) and (prefers-contrast: no-preference)");
+  if (hero) {
+    let frame = 0;
+    let x = 0;
+    let y = 0;
+    const reset = () => {
+      cancelAnimationFrame(frame);
+      frame = 0;
+      hero.removeAttribute("data-pointer-active");
+    };
+    hero.addEventListener("pointermove", (event) => {
+      if (!pointerMotion.matches || event.pointerType === "touch") return;
+      x = event.clientX;
+      y = event.clientY;
+      if (frame) return;
+      frame = requestAnimationFrame(() => {
+        frame = 0;
+        const bounds = hero.getBoundingClientRect();
+        hero.style.setProperty("--pointer-x", `${x - bounds.left}px`);
+        hero.style.setProperty("--pointer-y", `${y - bounds.top}px`);
+        hero.setAttribute("data-pointer-active", "");
+      });
+    }, { passive: true });
+    hero.addEventListener("pointerleave", reset);
+    hero.addEventListener("pointercancel", reset);
+    pointerMotion.addEventListener("change", reset);
+  }
+</script>

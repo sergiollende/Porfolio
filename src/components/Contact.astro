@@ -1,0 +1,17 @@
+---
+import Arrow from "./Arrow.astro";
+import { profile } from "../data/profile";
+import type { PortfolioContent } from "../types/content";
+interface Props { content: PortfolioContent["contact"]; }
+const { content } = Astro.props;
+---
+<section id="contact" class="contact-section" aria-labelledby="contact-title">
+  <div><h2 id="contact-title">{content.title}</h2><p>{content.description}</p></div>
+  <div class="contact-links">
+    <a class="contact-email" href={`mailto:${profile.email}`} aria-label={`${content.email}: ${profile.email}`}><span>{profile.email}</span><Arrow diagonal /></a>
+    <div class="social-links">
+      <a class="text-link" href={profile.linkedin} target="_blank" rel="noopener noreferrer" aria-describedby="external-link-note">LinkedIn<Arrow diagonal /></a>
+      <a class="text-link" href={profile.github} target="_blank" rel="noopener noreferrer" aria-describedby="external-link-note">GitHub<Arrow diagonal /></a>
+    </div>
+  </div>
+</section>

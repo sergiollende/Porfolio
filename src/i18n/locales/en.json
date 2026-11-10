@@ -1,81 +1,93 @@
 {
-  "NAV_ITEMS": [
-    {
-      "title": "Experience",
-      "label": "experience",
-      "url": "/#experience"
-    },
-    {
-      "title": "About me",
-      "label": "aboutme",
-      "url": "/#aboutme"
-    },
-    {
-      "title": "Projects",
-      "label": "projects",
-      "url": "/#projects"
-    },
-    {
-      "title": "Contact",
-      "label": "contact",
-      "url": "mailto:sergiollende7@gmail.com"
-    }
-  ],
-  "AVAILABLE": "Available for hiring",
-  "HERO":{
-    "title": "Hey, I'm Sergio Llenderrozos",
-    "subtitle": "Frontend Developer",
-    "description1": "Experienced Software Engineer specialized in",
-    "description2": "developing custom software solutions.",
-    "description3": "Based in Asturias, Spain",
-    "description4": "with a robust background in",
-    "description5": " programming, algorithms, and problem-solving",
-    "contact": "Contact me"
+  "meta": {
+    "title": "Sergio Llenderrozos — Software Engineer · C# & .NET",
+    "description": "Madrid-based software engineer specialising in C# and .NET. Experience at Enterprise Mobility, application performance and integrations. Explore my experience and projects."
   },
-  "EXPERIENCE" : [
-    {
-      "date": "September 2024 - Currently...",
-      "title": "Software Engineer",
-      "company": "Seidel Ingeniería Informática",
-      "description":
-        "Responsible for developing customised sofwtare covering both front-end and back-end together with a development team. Maintaining daily client communication, troubleshooting and resolving bugs, technical issues, and performance bottlenecks."
+  "nav": { "experience": "Experience", "projects": "Projects", "about": "About", "contact": "Contact", "label": "Main navigation", "skip": "Skip to content", "home": "Sergio Llenderrozos, home" },
+  "controls": { "language": "Cambiar a español", "theme": "Dark mode", "dark": "Switch to dark theme", "light": "Switch to light theme", "external": "Opens in a new tab." },
+  "hero": {
+    "role": "Software engineer · C# & .NET",
+    "description": "I build business applications, improve their performance and resolve production issues. In my own projects, I also build web interfaces and integrations.",
+    "current": "Software Engineer II at Enterprise Mobility", "location": "Madrid, Spain", "projects": "View projects", "contact": "Contact"
+  },
+  "experience": {
+    "title": "Experience",
+    "introduction": "Building and maintaining business applications, from investigating production issues to delivering changes.",
+    "items": [
+      {
+        "company": "Enterprise Mobility", "location": "Madrid, Spain", "period": "May 2025 — present",
+        "roles": [
+          { "title": "Software Engineer II", "period": "October 2026 — present" },
+          { "title": "Software Engineer I", "period": "May 2025 — September 2026" }
+        ],
+        "result": { "value": "50%", "description": "reduction in memory consumption in an enterprise web application." },
+        "highlights": [
+          "Investigated and resolved critical production incidents, working directly with application users.",
+          "Implemented bulk invoice submission to Spain's Tax Agency to reduce manual work.",
+          "Build changes from business requirements and contribute to testing and production maintenance."
+        ],
+        "technologies": ["C#", ".NET", "SQL", "JavaScript", "ASP.NET Web Forms"]
+      },
+      {
+        "company": "Seidel Ingeniería Informática", "location": "Oviedo, Spain", "period": "September 2024 — May 2025",
+        "roles": [{ "title": "Software Engineer", "period": "September 2024 — May 2025" }],
+        "highlights": ["Developed and maintained custom ERP solutions with C#/.NET, WPF and SQL Server.", "Worked directly with clients to clarify requirements and resolve issues."],
+        "technologies": ["C#", ".NET", "WPF", "SQL Server"]
+      },
+      {
+        "company": "Seidel Ingeniería Informática", "location": "Oviedo, Spain", "period": "December 2023 — July 2024",
+        "roles": [{ "title": "Software Engineer Intern", "period": "December 2023 — July 2024" }],
+        "highlights": ["Improved a client ERP application's performance by more than 20% through targeted optimisations.", "Built REST APIs and contributed to migrating legacy .NET software towards .NET 6 microservices and integrating two previously separate applications."],
+        "technologies": ["C#", ".NET 6", "REST APIs", "SQL Server"]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Selected projects",
+    "introduction": "An independent product that connects calendars and email, and a website delivered for a client. What I built and where each project stands.",
+    "problem": "The need", "contribution": "What I built", "visit": "Visit website",
+    "earlier": {
+      "title": "Other projects",
+      "visit": "Play game",
+      "code": "View code",
+      "items": [
+        { "id": "stackTower", "title": "Stack Tower", "description": "A 2D block-stacking game built with HTML and CSS to practise positioning and animation." }
+      ]
     },
-    {
-      "date": "December 2023 - July 2024",
-      "title": "Software Engineer Intern",
-      "company": "Seidel Ingeniería Informática",
-      "description":
-        "Developed custom software solutions for clients, collaborating with agile development team. Improved ERP performance by over 20% for a real client through system optimization.  Led the architectural migration to microservices, enhancing system scalability and maintainability."
-    }
-  ],
-  "PROJECTS_LIST" : 
-  [
-    {
-      "title": "Stack Tower",
-      "description":
-        "Simple 2D stack tower game created using only HTML and CSS. Interesting project for practising positioning and animations.",
-      "image": "/projects/stackTower.webp",
-      "link": "https://llendestacktower.netlify.app/",
-      "github": "https://github.com/sergiollende/StackTower",
-      "tags": ["HTML", "CSS"]
-    }
-  ],
-  "PROJECTS" : {
-    "code": "Code",
-    "preview": "Preview"
+    "items": [
+      {
+        "id": "nomasolvidos", "title": "NoMasOlvidos", "category": "Independent product · Appointment automation",
+        "description": "Email reminders based on appointments in a business's existing calendar.",
+        "problem": "Reduce manual follow-up without switching calendar tools.",
+        "contribution": "I built the product with Next.js, from the interface to calendar connections and automated reminders.",
+        "status": "In development · No real users yet",
+        "details": ["Google Calendar, Outlook and email reminders tested internally.", "WhatsApp Business integration pending."],
+        "imageAlt": "NoMasOlvidos homepage with an illustrative calendar and appointment reminder"
+      },
+      {
+        "id": "claudia", "title": "Claudia Lucas Psicología", "category": "Client project · Professional website",
+        "description": "A website for a psychologist offering online and in-person appointments.",
+        "problem": "Explain her services and make it easy for prospective clients to get in touch.",
+        "contribution": "I built the website with Astro, added a contact form and worked on the site's SEO.",
+        "status": "Delivered · Real client",
+        "details": [],
+        "imageAlt": "Claudia Lucas Psicología homepage with links to services and session requests"
+      }
+    ]
   },
-  "ABOUTME":{
-    "introduction": "My name is Sergio Llenderrozos, but my friends call me Llende. I began my programming journey at the age of 16, creating my first application using Python. Currently, I specialize in",
-    "introduction2": "developing custom software solutions.",
-    "achievements": "Among my notable achievements is the successful migration of client applications from monolithic architectures to microservices and development of custom software solutions.",
-    "experience": "As a software engineer,",
-    "experience2": "I possess extensive experience with a wide range of modern languages and frameworks, with a particular focus on",
-    "experience3": "C# and .NET",
-    "experience4": "My objective is to continually enhance my programming skills and professional expertise."
+  "about": {
+    "title": "Technical profile",
+    "description": "I specialise in C# and .NET. I have maintained business systems, built REST APIs and worked with SQL Server. My web projects let me apply that experience across service integrations and user interfaces.",
+    "skillsTitle": "Technologies",
+    "skills": [
+      { "title": "Backend & data", "items": ["C#", ".NET", "REST APIs", "Entity Framework", "SQL Server", "PostgreSQL"] },
+      { "title": "Interfaces & applications", "items": ["ASP.NET Web Forms", "WPF", "TypeScript", "JavaScript", "Next.js", "React", "Astro"] },
+      { "title": "Tools & services", "items": ["Azure", "Azure Data Factory", "Azure DevOps", "Supabase", "Postman", "Visual Studio"] }
+    ],
+    "educationTitle": "Education", "degree": "B.Sc. in Computer Engineering · Bilingual programme",
+    "university": "University of Oviedo · 2020–2024", "exchange": "International exchange at the University of Piraeus, Athens.",
+    "languagesTitle": "Languages", "languages": ["Native Spanish", "English B2 · Cambridge qualification"]
   },
-  "FOOTER":{
-    "rights": "Almost all rights reserved",
-    "sobremi": "About me",
-    "contact": "Contact"
-  }
+  "contact": { "title": "Get in touch", "description": "If you're hiring for a backend team, I'd be glad to discuss my .NET experience and the technical decisions behind these projects.", "email": "Send an email" },
+  "footer": { "built": "Built with Astro.", "top": "Back to top" }
 }
