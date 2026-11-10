@@ -51,7 +51,8 @@
       "visit": "Play game",
       "code": "View code",
       "items": [
-        { "id": "stackTower", "title": "Stack Tower", "description": "A 2D block-stacking game built with HTML and CSS to practise positioning and animation." }
+        { "id": "stackTower", "title": "Stack Tower", "description": "A 2D block-stacking game built with HTML and CSS to practise positioning and animation." },
+        { "id": "llendeBird", "title": "LlendeBird", "description": "A Flappy Bird-style game with difficulty levels, skins and power-ups." }
       ]
     },
     "items": [

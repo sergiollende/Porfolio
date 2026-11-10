@@ -51,7 +51,8 @@
       "visit": "Jugar",
       "code": "Ver código",
       "items": [
-        { "id": "stackTower", "title": "Stack Tower", "description": "Juego 2D de apilar bloques, construido con HTML y CSS para practicar posicionamiento y animaciones." }
+        { "id": "stackTower", "title": "Stack Tower", "description": "Juego 2D de apilar bloques, construido con HTML y CSS para practicar posicionamiento y animaciones." },
+        { "id": "llendeBird", "title": "LlendeBird", "description": "Juego inspirado en Flappy Bird con niveles de dificultad, skins y potenciadores." }
       ]
     },
     "items": [

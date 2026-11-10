@@ -27,9 +27,14 @@ export const earlierProjectMetadata = {
     github: "https://github.com/sergiollende/StackTower",
     technologies: ["HTML", "CSS"],
   },
+  llendeBird: {
+    url: "https://llendebird.netlify.app/",
+    github: "https://github.com/sergiollende/LlendeBird",
+    technologies: ["HTML", "CSS", "JavaScript"],
+  },
 };
 
 export function getEarlierProjectMetadata(id: string) {
-  if (id !== "stackTower") throw new Error(`Unknown earlier project: ${id}`);
+  if (id !== "stackTower" && id !== "llendeBird") throw new Error(`Unknown earlier project: ${id}`);
   return earlierProjectMetadata[id];
 }
